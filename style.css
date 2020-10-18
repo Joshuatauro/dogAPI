@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+
+
+}
+
+.main{
+  background: #00b4e7;
+  min-height: 100vh;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container h1{
+  color: white;
+}
+
+.main-container p
+{
+  color: white;
+  padding-bottom: 50px;
+}
+
+.images-intro{
+  color: white;
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.image-container{
+  margin-top: 20px;
+}
+
+img{
+  width: 300px;
+}
+
+.fa-paw{
+  color: orange;
+  padding: 10px 10px;
+
+  /* animation-name: rotation; */
+  animation: spin 2s infinite ease-in-out;
+  /* animation-duration: 2s; */
+
+  display: block;
+}
+
+.fa-paw.disable{
+  display: none;
+}
+
+@keyframes spin{
+  100% {
+    transform: rotate(360deg)
+  }
+}
