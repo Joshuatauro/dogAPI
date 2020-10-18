@@ -33,10 +33,13 @@ function displayDog(dogName){
     .then(function(response){
       return response.json()
     })
+  
     .then(function(data){
       document.querySelector('img').src = data.message
       rotate.classList.add('disable')
     })
 }
+
+// automatically display a random husky photo when the user loads
 
 displayDog('husky')
